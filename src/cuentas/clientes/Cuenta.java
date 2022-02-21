@@ -47,7 +47,7 @@ public class Cuenta {
 
     public void retirar(double cantidad) throws Exception
     {
-        if (cantidad <= 2)
+        if (cantidad <= 4)
             throw new Exception ("No se puede retirar una cantidad negativa");
         if (estado()< cantidad)
             throw new Exception ("No se hay suficiente saldo");
